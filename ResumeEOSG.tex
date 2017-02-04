@@ -1,0 +1,290 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FriggeriEOSG Resume/CV
+% LuaLaTex Template 
+% Version 1.0 (20/12/16)
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% Adapated from Original by author:
+% Elma O'Sullivan-Greene
+% https://github.com/eosg
+%
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with LuaLaTeX 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{friggeriEOSG-cv} 
+\usepackage{fontawesome}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{scrextend}
+\usepackage{changepage} %adjust width, i.e parapgraph indent
+%\geometry{left=2.5cm} 
+
+\usepackage{xcolor}
+\usepackage{array,tabularx}
+\patchcmd{\entryb}{11.8cm}{10.4cm}{}{} %this one is for was side bar section on front page 14.8 for one column version adjusts education %increasing from 11.8cm to 12cm///decided to leave at 11.8cm in end
+\patchcmd{\entry}{11.8cm}{15.8cm}{}{} %this one is for one column parts of CV
+\patchcmd{\entryc}{11.8cm}{11.8cm}{}{} %education section
+
+
+\begin{document}
+
+\header{}{Jane Smith}{Electrical Engineer, Data Analyst and Computational Modelling Specialist}
+% Your name and current job title/field
+
+
+%\begin{flushright} 
+%\faPhone $\;$ 0406 478 403\\ %$\qquad$
+%\faEnvelope $\;$ elmagreene@gmail.com \\%$\qquad$ 
+%\vspace{0.1em}
+%\includegraphics[height=0.95em]{AU.png} Australian Citizen
+%\end{flushright}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+\vspace{1.5em}
+\textcolor{darkgray}{\faPhone} $\;$ 0401 234 567 
+\vspace{1.0em}
+\textcolor{darkgray}{\faEnvelope}$\;$ \href{mailto:myname@domain.com}{myname@domain.com}
+\vspace{1.0em}
+\includegraphics[height=0.95em]{AUgray.png} Australian Citizen
+\vspace{2.5em}
+
+\section{programming}
+\vspace{1.5em}
+\textcolor{darkgray}{\faGithub}$\;$ \href{https://github.com/username}{github.com/MyUsername}
+\vspace{1.0em}
+C/C++
+\vspace{1.0em}
+R
+\vspace{1.0em}
+Perl
+\vspace{1.0em}
+Python
+\vspace{1.0em}
+Verilog-A
+\vspace{1.0em}
+VHDL
+\vspace{2.5em}
+
+\section{scientific computing}
+\vspace{1.5em}
+Matlab
+\vspace{1.0em}
+Simulink
+\vspace{1.0em}
+Octave
+\vspace{1.0em}
+LabVIEW
+\vspace{1.0em}
+COMSOL
+\vspace{2.5em}
+
+\section{expertise}
+\vspace{1.5em}
+Data Analysis
+\vspace{1.0em}
+Statistics
+\vspace{1.0em}
+Mathematical Modelling
+\vspace{1.0em}
+Computational Modelling
+\vspace{1.0em}
+Data Visualisation
+\vspace{1.0em}
+Systems Analysis
+\vspace{1.0em}
+Data Modelling and Forecasting
+\vspace{3.6em} %adjust so botton line of side bar is alligned with bottom line of main column
+
+\section{references}
+\vspace{1.5em}
+Available upon request
+\end{aside}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PROFILE SECTION
+%----------------------------------------------------------------------------------------
+\section{professional summary}
+%------------------------------------------------
+A highly talented, skilled and motivated electrical engineer with 10 years' experience driving high impact innovation through analytics of large datasets and computational modelling of complex systems.
+
+\vspace{0.5\parsep}
+
+I conceptualised, designed, applied and validated multiple models and algorithms for diverse datasets, including project management of small research teams.
+
+\vspace{0.5\parsep}
+
+I thrive in interdisciplinary and collaborative environments with experience engaging diverse stakeholders across research institutes, universities and industry. 
+
+\vspace{1.0\parsep}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{work experience}
+\begin{entrylistb}
+%------------------------------------------------
+
+\entryb
+{2015 -- {\thinfont \addfontfeature{Color=gray} Present}} %\hspace*{0.25cm}
+{University of Australia}
+{Defence Research Fellow}
+{Developed mathematical models for the Defence XYZ program in ABC to develop closed loop control of X systems to activate Y and reduce Z.  Successfully patented several innovations in topic A, topic B and topic C.}
+\\
+
+\entryb
+{2012 -- 2016}
+{University of Australia}
+{Academic Research Fellow}
+{Developed forecasting models for X disease with successful clinical translation based on Y method and involving data management of a large database of Z type data.}
+\\
+
+\entryb
+{2010 -- 2012}
+{Australian Research Institute}
+{Research Assistant}
+{Applied statistical models to optimise X performance across algorithms in Y devices that restore Z to ABC populations; results effectively minimised test time in clinical trials.}
+\\
+
+\entryb
+{2006 -- 2010}
+{ICT Company Australia}
+{ICT Researcher}
+{Research towards prediction of XYZ disease; obtained extensive experience in data analysis and mathematical modelling to forecast and classify disease events, including mining large databases of ABC data. 
+}
+\\
+
+\entryb
+{2005 -- 2006}
+{ABC Technologies, Ireland}
+{Design \& Testing Engineer}
+{Responsible for automation of test procedures on a silicon wafer probe station, including data mining and analysing text-based probing results. Design of custom electronics to client specifications.}
+\\
+
+\entryb
+{2004 -- 2004}
+{Tech Devices Company, Ireland}
+{Intern – XYZ Design}
+{Behavioural modelling to enable rapid simulation of XYZ; resulting models successfully deployed globally in the company's software libraries.} 
+\end{entrylistb}
+
+\vspace{1.3\parsep}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{professional activities}  
+\begin{entrylistDoublecolhalf}
+\entryDoublecolhalf
+{\bf Publications} 
+{Full list can be found at: \href{https://scholar.google.com.au/citations?user=MYUSERCODE}{GoogleScholar://{\thinfont \addfontfeature{Color=gray} Jane Smith}$\,$} 
+}
+
+\entryDoublecolhalf
+{\bf Member IEEE} 
+{Institute of Electrical and Electronics Engineers} 
+
+\entryDoublecolhalf
+{\bf Member IEEE WIE} 
+{IEEE, Women in Engineering \\Mentor for female engineers on IEEE Collabratec}
+
+\entryDoublecolhalf
+{\bf Engineers$\,$Australia} 
+{Speaker at ABC Engineering Conference, 2015}
+}
+\end{entrylistDoublecolhalf}
+
+%Second page needs new layout/geometry
+\newgeometry{left=1.4cm, top=1.5cm, bottom=1.5cm, right=1.5cm}
+%-------------------------------------------
+%	SOFT SKILLS/EXPERTISE SECTION
+%----------------------------------------------------------------------------------------
+\begin{entrylistDoublecol}
+\entryDoublecol
+{ }
+{\section{career highlights}\vspace{0.15cm}}
+\end{entrylistDoublecol}
+\begin{entrylistDoublecol}
+\entryDoublecol
+{\subsection{{\LARGE$\longrightarrow$}\\{\Large\addfontfeature{Color=gray}mathematical modelling and data analytics}}}
+{Productively managed interdisciplinary collaboration with  XYZ over 10 years. My mathematical modelling and data analytics research was the basis of clinical trials at XYZ; positive trial results steered current clinical practice to ABC method.
+\\[-5pt]
+
+Successfully developed data visualisation graphics to communicate analytical findings. At ABC Technologies, I programmed graphical mapping software to visualise parameters across a silicon wafer from text output of a wafer probe station.\\[-5pt]
+
+Effective multi-institute collaboration where my models linked X data from ABC Institute with Y data from DEF Institute, steering experimental design at these partner institutions. \\[-5pt]
+
+Patented innovations in the ABC project. This work used statistical modelling techniques and involved close collaboration with a nationwide consortium of partners including A, B and C.\\
+\vspace{0.2cm}
+}
+
+\entryDoublecol
+{\subsection{{\LARGE$\longrightarrow$}\\{\Large\addfontfeature{Color=gray}reporting and $\qquad\qquad$ presenting}}}
+{Confident public speaker who delivers concise, informative and engaging presentations. I regularly present data findings and forecasting to technical groups, board members, project executives, large conference audiences and clinical collaborators.\\[-5pt] 
+
+Extensive experience generating well researched project reports for a broad range of stakeholders including national and international project managers, board executives, government and project partners.\\[-5pt]
+
+Recognised for my technical communication and data analytics by receiving best paper award (awarded by IEEE) and best poster award for research excellence (awarded by Australian ABC Institute).\\
+\vspace{0.2cm}
+}
+
+
+\entryDoublecol
+{\subsection{{\LARGE$\longrightarrow$}\\{\Large\addfontfeature{Color=gray}project development}}}
+{Experience in project scoping, assessing technical trends and understanding regulatory requirements through my role at ABC focused on rapidly developing internationally competitive implants that were clinically safe and effective in restoring health.\\[-5pt]
+
+Successful grant and fellowship applications, acquiring over \$Xk funding to steer the strategic direction of projects including facilitating and chairing project meetings.\\
+\vspace{0.2cm}
+}
+
+\entryDoublecol
+{\subsection{{\LARGE$\longrightarrow$}\\{\Large\addfontfeature{Color=gray}leadership and $\qquad\qquad$ project management}}}
+{Successfully managed research projects including leading, training and mentoring teams of PhD and masters level students.\\[-5pt]
+
+Extensive experience co-coordinating and teaching engineering courses at University of Australia. Through skilful management, training and mentoring of teaching staff teams and effective liaison with technicians and IT support, I proficiently raised student experience scores from X to Y. \\[-5pt]
+
+As a member of organising committee for the International Conference in Y, I expertly carried out financial management and budget projections; worked closely with venue management; oversaw the procurement of catering; and coordinated personnel and subcontractors.\\[-5pt]
+
+As design engineer at ABC, I designed technical solutions to meet client requirements and oversaw their implementation and delivery.\\[-5pt]
+
+I serve as engineering academic representative on student-staff liaison committees and working groups at the University of Australia, successfully mediating between students and academic staff, IT staff, administration staff and senior executives to improve student service experience through a consultative process.\\[-5pt]
+}
+\end{entrylistDoublecol}
+%-------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{entrylistDoublecol}
+\entryDoublecol
+{ }
+{\section{education}\vspace{0.25cm}} 
+\end{entrylistDoublecol}
+\begin{entrylistDoublecol}
+\entryDoublecol
+{ }
+{\begin{tabularx}{13.2cm}{ll>{\raggedleft\arraybackslash}X}
+		  {\thinfont\addfontfeature{Color=gray}2011$\;$} & $\qquad$PhD Electrical \& Electronic Engineering &University X, Australia\\[+3pt]
+			{\thinfont\addfontfeature{Color=gray}2005$\;$} & $\qquad$Bachelor Electrical \& Electronic Engineering & University Y, Ireland\\
+\end{tabularx}
+}
+\end{entrylistDoublecol}
+
+%------------------------------------------------
+
+\end{document}
